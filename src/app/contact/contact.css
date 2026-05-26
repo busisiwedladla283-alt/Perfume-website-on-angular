@@ -1,0 +1,26 @@
+.contact {
+  display:flex;
+  justify-content:space-around;
+  padding:50px;
+}
+
+.contact-us, h1.contact-title {
+    color: #c9a24a;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  width:300px;
+}
+
+input, textarea {
+  padding:10px;
+}
+
+button {
+  background:#c9a24a;
+  border:none;
+  padding:10px;
+}

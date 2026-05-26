@@ -1,0 +1,18 @@
+<div class="contact">
+  <div class="info">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-envelope"></i> info@Bucysessence.com</p>
+    <p><i class="fas fa-phone"></i> Phone: +27 83 456 789</p>
+    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, Johannesburg, South Africa</p>
+    <p><i class="fas fa-clock"></i> Hours: Mon - Fri (9am - 5pm)</p>
+  </div>
+
+  <div class="form">
+    <input [(ngModel)]="form.name" placeholder="Your Name">
+    <input [(ngModel)]="form.email" placeholder="Email">
+    <input [(ngModel)]="form.subject" placeholder="Subject">
+    <textarea [(ngModel)]="form.message" placeholder="Message" style="height:150px;"></textarea>
+
+    <button (click)="sendMessage()">Send Message</button>
+  </div>
+</div>

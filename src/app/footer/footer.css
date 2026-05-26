@@ -1,0 +1,38 @@
+footer {
+background-color: black;
+color:#c9a24a;
+text-align: center;
+padding: 60px 50px;
+font-size: 13px;
+letter-spacing: 1px;
+font-family: 'Georgia', serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+.product-grid {
+grid-template-columns: repeat(2, 1fr);
+padding: 40px 30px;
+}
+}
+
+/* HOVER EFFECT (gold underline like navbar) */
+.footer-right a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #c9a24a;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.footer-right a:hover::after {
+  width: 100%;
+}
+
+.footer-right a:hover {
+  color: #c9a24a;
+}
+

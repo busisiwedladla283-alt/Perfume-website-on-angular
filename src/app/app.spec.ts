@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+// Use Angular's testing globals (Jasmine) provided by the test environment; no explicit import needed
 import { App } from './app';
 
 describe('App', () => {

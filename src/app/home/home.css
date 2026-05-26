@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 60px;
+  background: #0d0d0d;
+  color: white;
+  min-height: 90vh;
+  background: black;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* LEFT SIDE */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: #c9a24a;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.hero-content h2 {
+  font-style: italic;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color:white;
+  font-style: italic;
+}
+
+/* BUTTON */
+.hero-content button {
+  display: inline-block;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #c9a24a;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px; /* ✅ makes it “cute” */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  position: relative;
+}
+
+
+.hero-content button:hover {
+  background: #c9a24a;
+}
+
+
+.hero-image img {
+  width: 400px;
+
+  filter: 
+    brightness(0.9)
+    contrast(1.1)
+    drop-shadow(0 0 40px rgba(255, 215, 0, 0.3));
+
+  mix-blend-mode: screen;
+  opacity: 0.95;
+  
+}
