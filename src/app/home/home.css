@@ -6,7 +6,7 @@
   background: #0d0d0d;
   color: white;
   min-height: 90vh;
-  background: black;
+  /* background: black; */
   background-size: cover;
   background-position: center;
 }
@@ -69,4 +69,9 @@
   mix-blend-mode: screen;
   opacity: 0.95;
   
+}
+
+
+.feat{
+  color: #989896;
 }
