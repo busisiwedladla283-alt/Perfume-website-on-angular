@@ -1,16 +1,9 @@
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
-/* MAIN LAYOUT */
-app-root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
-/* PUSH CONTENT */
-router-outlet + * {
-  flex: 1;
+
+.foot{
+  margin:0px;
+  margin-top: 300px;
+
+  
 }

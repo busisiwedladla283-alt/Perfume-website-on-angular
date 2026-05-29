@@ -1,36 +1,25 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { Product } from '../interfaces/product.model';
+import { CartService } from '../cartservice';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule],
   templateUrl: './products.html',
   styleUrl: './products.css',
+  standalone: true
+ 
 })
 export class Products {
-  products = [
-    {
-      name: 'Golden Rose',
-      price: 950,
-      desc: 'A soft floral fragrance with hints of rose, jasmine, and vanilla.',
-      image: 'product-1-image.png'
-    },
-    {
-      name: 'Midnight Oud',
-      price: 1200,
-      desc: 'A deep bold scent with oud, amber and musk.',
-      image: 'product-2-image.png'
-    },
-    {
-      name: 'Velvet Musk',
-      price: 1100,
-      desc: 'Warm vanilla blended with sandalwood and rose.',
-      image: 'product-3-image.png'
-    }
-  ];
-;
+  private productService = inject(ProductService);
+  private cartService = inject(CartService);
 
-  addToCart(product: any) {
+
+  // Expose the signal directly to the template
+  readonly products = this.productService.products;
+
+  addToCart(product: Product): void {
     console.log('Added to cart:', product);
+    this.cartService.addToCart(product);
   }
 }
